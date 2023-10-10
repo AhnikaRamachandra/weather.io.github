@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: white;
+    background-image: radial-gradient(circle,#1c7fc2 0%,#009cdc 28%,#0d9ade 32%,#011844 100%);
+font-weight: 300;
+font-size: 22px;
+}
+.weather{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.weathersearch{
+    margin-bottom: 20px;
+ color: inherit;
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    background-color: rgba(255,255,255,0.15);
+    font-size: 20px;
+}
+.weathersearch::placeholder{
+    color: white;
+}
+.weathertoday{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.weatherimage{
+    width: 30vmin;
+    align-self: center;
+}
+.weathercity{
+    font-size: 36px;
+    font-weight:600 ;
+    margin: 20px 0;
+}
+.weatherday{
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.weatherindicator::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.weatherindicator--humidity::before{
+    background-image: url('img/50d.png');
+}
+.weatherindicator--wind::before{
+    background-image: url('img/50n.png');
+}
+.weatherindicator--pressure::before{
+    background-image: url('img/13d.png');
+}
+.weathertemperature{
+    font-size: 60px;
+}
+.weatherforecast{
+    width: 100%;
+    text-align: center;
+    display: flex;
+ flex-wrap: wrap;
+    justify-content: space-between;
+}
+.weatheforecasticon{
+    max-width: 70px;
+}
+.weatherforecast--item{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin: 0 10px 10px;
+  width: 150px;
+    padding: 30px 5px 20px;
+    box-sizing: border-box;
+    min-width: 150px;
+    width: calc(20% -20px);
+    flex-grow: 1;
+}
